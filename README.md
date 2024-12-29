@@ -1,12 +1,12 @@
-# DOTFILES for Arch Linux + Hyprland
+# DOTFILES for Arch Linux + Cosmic
 
 ## Disclaimer
 
 This is for my personal use and it's working in progress, so files can be deleted, things can break, etc. If you want to try it, it`s for your own risk.
 
-## Arch Linux + Hyprland + This Dotfiles
+## Arch Linux + Cosmic + This Dotfiles
 
-See: https://github.com/odevsa/aha
+See: https://github.com/odevsa/aca
 
 ## Automatic Install
 

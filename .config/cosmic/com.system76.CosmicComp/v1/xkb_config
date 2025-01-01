@@ -1,9 +1,7 @@
 (
     rules: "",
     model: "pc105+inet",
-    layout: "us,br,br",
-    variant: "alt-intl,,thinkpad",
+    layout: "br,us,br",
+    variant: "thinkpad,alt-intl,",
     options: Some("terminate:ctrl_alt_bksp"),
-    repeat_delay: 600,
-    repeat_rate: 25,
 )

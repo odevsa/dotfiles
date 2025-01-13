@@ -1,6 +1,6 @@
 (
     output: "all",
-    source: Path("/home/raphael/Pictures/Wallpapers/default.jpg"),
+    source: Path("/home/{{user}}/Pictures/Wallpapers/default.jpg"),
     filter_by_theme: true,
     rotation_frequency: 3600,
     filter_method: Lanczos,

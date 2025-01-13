@@ -1,0 +1,21 @@
+{
+  "brim_type": "no_brim",
+  "elefant_foot_compensation": "0.5",
+  "filename_format": "{input_filename_base}.gcode",
+  "from": "User",
+  "inherits": "0.24mm Draft @Creality Ender3V2",
+  "ironing_type": "top",
+  "is_custom_defined": "0",
+  "name": "0.24mm Draft Ender3V2",
+  "post_process": [
+    "python3 /home/{{user}}/.config/OrcaSlicer/user/default/assets/CreateHeaderAndThumbnail.py"
+  ],
+  "precise_outer_wall": "1",
+  "print_settings_id": "0.24mm Draft Ender3V2",
+  "seam_slope_conditional": "1",
+  "seam_slope_type": "external",
+  "support_style": "organic",
+  "support_type": "tree(auto)",
+  "version": "2.0.2.0",
+  "wall_sequence": "outer wall/inner wall"
+}

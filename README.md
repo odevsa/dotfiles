@@ -24,6 +24,12 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/odevsa/dotfiles/main/insta
   git clone https://github.com/odevsa/dotfiles.git /tmp/dotfiles
   ```
 
+- Replace `{{user}}` to `$USER`
+
+  ```
+  find /tmp/dotfiles -type f -exec sed -i "s/{{user}}/$USER/g" '{}' \;
+  ```
+
 - Copy files
 
   ```

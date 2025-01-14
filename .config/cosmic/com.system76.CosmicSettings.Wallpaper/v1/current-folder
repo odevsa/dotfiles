@@ -1,1 +1,1 @@
-Some("/home/{{user}}/Pictures/Wallpapers")
+Some("/home/{user}/Pictures/Wallpapers")

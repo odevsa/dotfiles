@@ -8,7 +8,7 @@
   "is_custom_defined": "0",
   "name": "0.12mm Fine Ender3V2",
   "post_process": [
-    "python3 /home/{{user}}/.config/OrcaSlicer/user/default/assets/CreateHeaderAndThumbnail.py"
+    "python3 /home/{user}/.config/OrcaSlicer/user/default/assets/CreateHeaderAndThumbnail.py"
   ],
   "precise_outer_wall": "1",
   "print_settings_id": "0.12mm Fine Ender3V2",

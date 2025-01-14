@@ -1,6 +1,6 @@
 {
-  "bed_custom_model": "/home/{{user}}/.config/OrcaSlicer/user/default/assets/Ender 3 V2.stl",
-  "bed_custom_texture": "/home/{{user}}/.config/OrcaSlicer/user/default/assets/Ender 3 V2.png",
+  "bed_custom_model": "/home/{user}/.config/OrcaSlicer/user/default/assets/Ender 3 V2.stl",
+  "bed_custom_texture": "/home/{user}/.config/OrcaSlicer/user/default/assets/Ender 3 V2.png",
   "from": "User",
   "gcode_flavor": "marlin2",
   "inherits": "Creality Ender-3 V2 0.4 nozzle",

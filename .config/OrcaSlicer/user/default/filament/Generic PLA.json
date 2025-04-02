@@ -1,25 +1,13 @@
 {
-    "filament_cost": [
-        "90"
-    ],
-    "filament_flow_ratio": [
-        "1"
-    ],
-    "filament_settings_id": [
-        "Generic PLA"
-    ],
-    "from": "User",
-    "inherits": "Creality Generic PLA",
-    "is_custom_defined": "0",
-    "name": "Generic PLA",
-    "nozzle_temperature": [
-        "190"
-    ],
-    "nozzle_temperature_initial_layer": [
-        "195"
-    ],
-    "nozzle_temperature_range_low": [
-        "180"
-    ],
-    "version": "2.0.2.0"
+  "filament_cost": ["90"],
+  "filament_flow_ratio": ["1"],
+  "filament_settings_id": ["Generic PLA"],
+  "from": "User",
+  "inherits": "Creality Generic PLA",
+  "is_custom_defined": "0",
+  "name": "Generic PLA",
+  "nozzle_temperature": ["190"],
+  "nozzle_temperature_initial_layer": ["195"],
+  "nozzle_temperature_range_low": ["180"],
+  "version": "2.0.2.0"
 }

@@ -27,19 +27,9 @@ alias ls="eza --icons"
 alias la="eza --icons -la"
 alias cat="bat --style=auto"
 alias update-repos="sudo -v && echo 'Searching...' && sudo reflector --latest 10 --sort rate --save /etc/pacman.d/mirrorlist &> /dev/null && echo 'Repositories updated!'"
+alias update="sudo pacman -Syu"
 alias install="sudo pacman -S"
 alias remove="sudo pacman -R"
-alias update="sudo pacman -Syu"
-
-# User configuration
-TTY_COLOR_SCHEME=~/.cache/wal/sequences
-if [ ! -f "$TTY_COLOR_SCHEME" ]; then
-	wallpaper ~/.config/hypr/wallpaper
-fi
-
-if [ -f "$TTY_COLOR_SCHEME" ]; then
-	(/bin/cat $TTY_COLOR_SCHEME &)
-fi
 
 # Oh-My-Posh
 eval "$(oh-my-posh init zsh --config ${HOME}/.config/oh-my-posh/config.omp.json)"

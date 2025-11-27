@@ -7,7 +7,6 @@
   "material-icon-theme.activeIconPack": "nest",
   "code-runner.clearPreviousOutput": true,
   "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "git.enableSmartCommit": true,
   "code-runner.executorMap": {
     "javascript": "node",

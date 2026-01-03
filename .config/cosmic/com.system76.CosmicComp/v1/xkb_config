@@ -1,7 +1,7 @@
 (
     rules: "",
-    model: "pc105+inet",
+    model: "abnt2",
     layout: "br,us,br",
-    variant: "thinkpad,alt-intl,",
-    options: Some("terminate:ctrl_alt_bksp"),
+    variant: ",intl,thinkpad",
+    options: None,
 )

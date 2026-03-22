@@ -3,32 +3,26 @@
         "#000000"
     ],
     "filament_cost": [
-        "90"
+        "60"
     ],
-    "filament_flow_ratio": [
-        "0.95"
+    "filament_max_volumetric_speed": [
+        "9"
     ],
     "filament_settings_id": [
-        "Generic PLA"
+        "Generic ABS"
     ],
     "from": "User",
-    "inherits": "Creality Generic PLA",
+    "inherits": "Creality Generic ABS",
     "is_custom_defined": "0",
-    "name": "Generic PLA",
+    "name": "Generic ABS",
     "nozzle_temperature": [
-        "200"
+        "240"
     ],
     "nozzle_temperature_initial_layer": [
-        "200"
-    ],
-    "nozzle_temperature_range_low": [
-        "180"
+        "240"
     ],
     "pressure_advance": [
-        "0.22"
-    ],
-    "slow_down_for_layer_cooling": [
-        "0"
+        "0.75"
     ],
     "version": "2.0.2.0"
 }

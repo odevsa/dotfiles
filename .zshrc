@@ -20,11 +20,12 @@ antigen apply
 
 # ENVs
 export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
+export EZA_ICONS_AUTO=1
 
 # Aliases
 alias sudo="sudo "
-alias ls="eza --icons"
-alias la="eza --icons -la"
+alias ls="eza"
+alias la="eza -la"
 alias cat="bat --style=auto"
 alias update-repos="sudo -v && echo 'Searching...' && sudo reflector --latest 10 --sort rate --save /etc/pacman.d/mirrorlist &> /dev/null && echo 'Repositories updated!'"
 alias update="sudo pacman -Syu"

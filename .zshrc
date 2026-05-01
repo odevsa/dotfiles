@@ -18,9 +18,6 @@ antigen bundle zsh-users/zsh-autosuggestions
 
 antigen apply
 
-# ENVs
-export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
-
 # Aliases
 alias sudo="sudo "
 alias ls="lsd"

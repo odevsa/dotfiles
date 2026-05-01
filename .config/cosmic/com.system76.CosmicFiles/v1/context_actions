@@ -1,0 +1,10 @@
+[
+    (
+        name: "Open with Code",
+        confirm: false,
+        selection: Any,
+        steps: [
+            "code %F",
+        ],
+    ),
+]

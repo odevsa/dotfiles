@@ -1,16 +1,38 @@
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
-  // "logo": {
-  //   "source": "~/.config/fastfetch/image.png",
-  //   "type": "kitty",
-  //   "height": 18,
-  //   "padding": {
-  //     "top": 1,
-  //     "left": 3
-  //   }
-  // },
+  "logo": {
+    "type": "auto",
+    // "source": "~/.config/fastfetch/image.png",
+    "height": 18,
+    "padding": {
+      "top": 1,
+      "left": 2,
+    },
+    "color": {
+      "1": "#92CF9C",
+      "2": "#629F6C",
+    },
+  },
   "display": {
-    "separator": "  "
+    "separator": "  ",
+    "color": {
+      "keys": "#92CF9C",
+    },
+    "bar": {
+      "width": 15,
+      "char": {
+        "elapsed": "█",
+        "total": "░",
+      },
+    },
+    "percent": {
+      "type": 3,
+      "color": {
+        "green": "green",
+        "yellow": "light_yellow",
+        "red": "light_red",
+      },
+    },
   },
   "modules": [
     "break",
@@ -18,23 +40,19 @@
     {
       "type": "os",
       "key": " OS",
-      "keyColor": "cyan",
-      "format": "{2}"
+      "format": "{2}",
     },
     {
       "type": "kernel",
       "key": "",
-      "keyColor": "cyan"
     },
     {
       "type": "packages",
       "key": "󰏖",
-      "keyColor": "cyan"
     },
     {
       "type": "shell",
       "key": "",
-      "keyColor": "cyan"
     },
 
     "break",
@@ -42,27 +60,22 @@
     {
       "type": "wm",
       "key": " DE/WM",
-      "keyColor": "cyan"
     },
     {
       "type": "lm",
       "key": "󰧨",
-      "keyColor": "cyan"
     },
     {
       "type": "wmtheme",
       "key": "󰉼",
-      "keyColor": "cyan"
     },
     {
       "type": "icons",
       "key": "󰀻",
-      "keyColor": "cyan"
     },
     {
       "type": "terminal",
       "key": "",
-      "keyColor": "cyan"
     },
 
     "break",
@@ -70,48 +83,35 @@
     {
       "type": "host",
       "key": "󰌢 PC",
-      "keyColor": "cyan"
     },
     {
       "type": "cpu",
       "key": "󰻠",
-      "keyColor": "cyan"
+      "format": "{name} ({cores-physical}C/{cores-logical}T) @ {freq-max}",
     },
     {
       "type": "gpu",
       "key": "󰍛",
-      "keyColor": "cyan"
     },
     {
       "type": "disk",
       "key": "",
-      "keyColor": "cyan"
     },
     {
       "type": "memory",
       "key": "󰑭",
-      "keyColor": "cyan"
     },
     {
       "type": "swap",
       "key": "󰓡",
-      "keyColor": "cyan"
     },
     {
       "type": "display",
       "key": "󰍹",
-      "keyColor": "cyan"
     },
     {
       "type": "uptime",
       "key": "󰅐",
-      "keyColor": "cyan"
     },
-
-    "break",
-    {
-      "type": "custom",
-      "format": "\u001b[90m▣  \u001b[31m▣  \u001b[32m▣  \u001b[33m▣  \u001b[34m▣  \u001b[35m▣  \u001b[36m▣  \u001b[37m▣ "
-    }
-  ]
+  ],
 }

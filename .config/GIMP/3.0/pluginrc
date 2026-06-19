@@ -2923,7 +2923,7 @@
         (icon icon-name -1 "")
         (load-proc
             (extensions "png")
-            (magics "0,string,‰PNG\r\n\032\n")
+            (magics "0,string,ï¿½PNG\r\n\032\n")
             (mime-types "image/png"))
          ""
          2147483647
@@ -3151,7 +3151,7 @@
         (icon icon-name -1 "")
         (load-proc
             (extensions "dcx")
-            (magics "0,string,±hÞ:")
+            (magics "0,string,ï¿½hï¿½:")
             (mime-types "image/x-dcx"))
          ""
          2147483647
@@ -3320,7 +3320,7 @@
         (icon icon-name -1 "")
         (load-proc
             (extensions "jxl")
-            (magics "0,string,ÿ\n,0,string,\\000\\000\\000\fJXL\\040\\015\\012‡\\012")
+            (magics "0,string,ï¿½\n,0,string,\\000\\000\\000\fJXL\\040\\015\\012ï¿½\\012")
             (mime-types "image/jxl"))
          ""
          2147483647
@@ -3385,7 +3385,7 @@
         (icon icon-name -1 "")
         (load-proc
             (extensions "jpg,jpeg,jpe")
-            (magics "0,string,ÿØÿ")
+            (magics "0,string,ï¿½ï¿½ï¿½")
             (mime-types "image/jpeg")
             (thumb-loader "file-jpeg-load-thumb"))
          ""
@@ -3459,7 +3459,7 @@
         (icon icon-name -1 "")
         (load-proc
             (extensions "j2k,j2c,jpc")
-            (magics "0,string,ÿOÿQ")
+            (magics "0,string,ï¿½Oï¿½Q")
             (mime-types "image/x-jp2-codestream"))
          ""
          2147483647
@@ -4297,7 +4297,7 @@
         (load-proc
             (extensions "xcf.gz,xcfgz")
             (meta-extensions "gz")
-            (magics "0,string,\037‹")
+            (magics "0,string,\037ï¿½")
             (mime-types "application/x-gzip"))
          ""
          2147483647
@@ -4377,7 +4377,7 @@
         (load-proc
             (extensions "xcf.xz,xcfxz")
             (meta-extensions "xz")
-            (magics "0,string,ý7zXZ")
+            (magics "0,string,ï¿½7zXZ")
             (mime-types "application/x-xz"))
          ""
          2147483647

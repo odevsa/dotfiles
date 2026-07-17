@@ -1,0 +1,8 @@
+{
+  "CtrlT": "ShellMode",
+  "CtrlD": "SpawnMultiCursor",
+  "CtrlN": "AddTab",
+  "CtrlW": "Quit",
+  "ShiftAltDown": "DuplicateLine",
+  "ShiftAltUp": "DuplicateLine,MoveLinesUp"
+}

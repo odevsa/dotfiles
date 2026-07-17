@@ -4,4 +4,6 @@
     layout: "br,us,br",
     variant: ",intl,thinkpad",
     options: None,
+    repeat_delay: 600,
+    repeat_rate: 25,
 )

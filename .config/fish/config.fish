@@ -16,4 +16,4 @@ alias install="sudo pacman -S"
 alias remove="sudo pacman -R"
 
 # Oh-My-Posh
-oh-my-posh init fish --config ~/.config/oh-my-posh/config.omp.json | source
+oh-my-posh init fish --config ~/.config/oh-my-posh/config.omp.yaml | source

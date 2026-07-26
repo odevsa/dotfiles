@@ -1,0 +1,325 @@
+$schema: https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json
+palette:
+  background-base: "#333333"
+  background-primary: "#1c4f41"
+  background-danger: "#DE2121"
+  background-success: "#1c9f41"
+  background-git: "#92cf9c"
+
+  foreground-base: "#CCCCCC"
+  foreground-primary: "#92cf9c"
+  foreground-danger: "#FFFFFF"
+  foreground-success: "#FFFFFF"
+  foreground-git: "#1c4f41"
+
+  path-separator: "#555555"
+  separator: "#222222"
+
+blocks:
+  - alignment: left
+    type: prompt
+    segments:
+      - type: text
+        style: plain
+        template: 
+        foreground: p:background-primary
+      - type: os
+        style: plain
+        background: p:background-primary
+        foreground: p:foreground-primary
+        template: " <foreground,background>{{ .Icon }}</> <background,p:separator></>"
+      - type: root
+        style: powerline
+        powerline_symbol: 
+        background: p:background-danger
+        foreground: p:foreground-danger
+        template: "  "
+      - type: path
+        style: powerline
+        powerline_symbol: 
+        background: p:background-base
+        foreground: p:foreground-base
+        template: " {{ .Path }} "
+        options:
+          folder_icon: "~"
+          folder_separator_icon: " <p:path-separator></> "
+          home_icon: ""
+          style: "agnoster_short"
+      - type: git
+        style: powerline
+        powerline_symbol: 
+        background: p:background-git
+        foreground: p:foreground-git
+        template: " {{ .UpstreamIcon }} {{ .HEAD }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }} "
+        options:
+          fetch_status: true
+          fetch_upstream_icon: true
+
+      - type: text
+        style: powerline
+        powerline_symbol: 
+        background: p:separator
+        foreground: transparent
+        template: "   "
+        options:
+          always_enabled: true
+
+      - type: clojure
+        style: powerline
+        powerline_symbol: 
+        background: "#9068B0"
+        foreground: "#ffffff"
+        template: " {{ .Full }}  "
+        options:
+          display_mode: files
+          fetch_version: true
+      - type: crystal
+        style: powerline
+        powerline_symbol: 
+        background: "#4063D8"
+        foreground: "#ffffff"
+        template: " {{ .Full }}  "
+        options:
+          display_mode: files
+          fetch_version: true
+      - type: dart
+        style: powerline
+        powerline_symbol: 
+        background: "#06A4CE"
+        foreground: "#ffffff"
+        template: " {{ .Full }}  "
+        options:
+          display_mode: files
+          fetch_version: true
+      - type: dotnet
+        style: powerline
+        powerline_symbol: 
+        background: "#00ffff"
+        foreground: "#000000"
+        template: " {{ .Full }}  "
+        options:
+          display_mode: files
+          fetch_version: true
+      - type: elixir
+        style: powerline
+        powerline_symbol: 
+        background: "#422251"
+        foreground: "#ffffff"
+        template: " {{ .Full }}  "
+        options:
+          display_mode: files
+          fetch_version: true
+      - type: fortan
+        style: powerline
+        powerline_symbol: 
+        background: "#422251"
+        foreground: "#ffffff"
+        template: " {{ .Full }} 󱈚 "
+        options:
+          display_mode: files
+          fetch_version: true
+      - type: go
+        style: powerline
+        powerline_symbol: 
+        background: "#7FD5EA"
+        foreground: "#ffffff"
+        template: " {{ .Full }}  "
+        options:
+          display_mode: files
+          fetch_version: true
+      - type: haskell
+        style: powerline
+        powerline_symbol: 
+        background: "#100e23"
+        foreground: "#906cff"
+        template: " {{ .Full }}  "
+        options:
+          display_mode: files
+          fetch_version: true
+      - type: java
+        style: powerline
+        powerline_symbol: 
+        background: "#4063D8"
+        foreground: "#ffffff"
+        template: " {{ .Full }}  "
+        options:
+          display_mode: files
+          fetch_version: true
+      - type: julia
+        style: powerline
+        powerline_symbol: 
+        background: "#4063D8"
+        foreground: "#ffffff"
+        template: " {{ .Full }}  "
+        options:
+          display_mode: files
+          fetch_version: true
+      - type: kotlin
+        style: powerline
+        powerline_symbol: 
+        background: "#906cff"
+        foreground: "#ffffff"
+        template: " {{ .Full }}  "
+        options:
+          display_mode: files
+          fetch_version: true
+      - type: lua
+        style: powerline
+        powerline_symbol: 
+        background: "#0000FF"
+        foreground: "#ffffff"
+        template: " {{ .Full }}  "
+        options:
+          display_mode: files
+          fetch_version: true
+      - type: mojo
+        style: powerline
+        powerline_symbol: 
+        background: "#906cff"
+        foreground: "#100e23"
+        template: " {{ .Full }} 🔥 "
+        options:
+          display_mode: files
+          fetch_version: true
+      - type: nim
+        style: powerline
+        powerline_symbol: 
+        background: "#f3d400"
+        foreground: "#193549"
+        template: " {{ .Full }}  "
+        options:
+          display_mode: files
+          fetch_version: true
+      - type: node
+        style: powerline
+        powerline_symbol: 
+        background: "#6CA35E"
+        foreground: "#ffffff"
+        template: " {{ .Full }}  "
+        options:
+          display_mode: files
+          fetch_version: true
+      - type: ocaml
+        style: powerline
+        powerline_symbol: 
+        background: "#444444"
+        foreground: "#d08770"
+        template: " {{ .Full }}  "
+        options:
+          display_mode: files
+          fetch_version: true
+      - type: perl
+        style: powerline
+        powerline_symbol: 
+        background: "#4063D8"
+        foreground: "#ffffff"
+        template: " {{ .Full }}  "
+        options:
+          display_mode: files
+          fetch_version: true
+      - type: php
+        style: powerline
+        powerline_symbol: 
+        background: "#4063D8"
+        foreground: "#ffffff"
+        template: " {{ .Full }}  "
+        options:
+          display_mode: files
+          fetch_version: true
+      - type: python
+        style: powerline
+        powerline_symbol: 
+        background: "#306998"
+        foreground: "#ffd43b"
+        template: " {{ .Full }}  "
+        options:
+          display_mode: files
+          fetch_virtual_env: false
+      - type: r
+        style: powerline
+        powerline_symbol: 
+        background: "#FDFEFF"
+        foreground: "#0000FF"
+        template: " {{ .Full }}  "
+        options:
+          display_mode: files
+          fetch_version: true
+      - type: ruby
+        style: powerline
+        powerline_symbol: 
+        background: "#4063D8"
+        foreground: "#ffffff"
+        template: " {{ .Full }}  "
+        options:
+          display_mode: files
+          fetch_version: true
+      - type: rust
+        style: powerline
+        powerline_symbol: 
+        background: "#99908a"
+        foreground: "#193549"
+        template: " {{ .Full }}  "
+        options:
+          display_mode: files
+          fetch_version: true
+      - type: swift
+        style: powerline
+        powerline_symbol: 
+        background: "#f6553c"
+        foreground: "#ffffff"
+        template: " {{ .Full }}  "
+        options:
+          display_mode: files
+          fetch_version: true
+      - type: v
+        style: powerline
+        powerline_symbol: 
+        background: "#4F87FF"
+        foreground: "#193549"
+        template: " {{ .Full }}  "
+        options:
+          display_mode: files
+          fetch_version: true
+      - type: vala
+        style: powerline
+        powerline_symbol: 
+        background: "#5E20A4"
+        foreground: "#ffffff"
+        template: " {{ .Full }}  "
+        options:
+          display_mode: files
+          fetch_version: true
+      - type: zig
+        style: powerline
+        powerline_symbol: 
+        background: "#ffad55"
+        foreground: "#342311"
+        template: " {{ .Full }}  "
+        options:
+          display_mode: files
+          fetch_version: true
+
+      - type: executiontime
+        style: powerline
+        powerline_symbol: 
+        background: p:background-base
+        foreground: p:foreground-base
+        template: " {{ .FormattedMs }} "
+        options:
+          always_enabled: true
+      - type: status
+        style: powerline
+        powerline_symbol: 
+        background: p:background-success
+        background_templates:
+          - "{{ if gt .Code 0 }}p:background-danger{{ end }}"
+        foreground: p:foreground-success
+        foreground_templates:
+          - "{{ if gt .Code 0 }}p:foreground-danger{{ end }}"
+        template: " <foreground,background>{{ if eq .Code 0 }}{{ else }}{{ end }}</> "
+        options:
+          always_enabled: true
+
+console_title_template: '{{if .Root}} ⚡ {{end}}{{.Folder | replace "~" ""}} @ {{.HostName}}'
+final_space: true
+version: 4

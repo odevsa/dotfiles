@@ -12,6 +12,7 @@ palette:
   foreground-success: "#FFFFFF"
   foreground-git: "#1c4f41"
 
+  path-separator: "#555555"
   separator: "#222222"
 
 blocks:
@@ -41,7 +42,7 @@ blocks:
         template: " {{ .Path }} "
         options:
           folder_icon: "~"
-          folder_separator_icon: " <p:separator></> "
+          folder_separator_icon: " <p:path-separator></> "
           home_icon: ""
           style: "agnoster_short"
       - type: git
@@ -335,7 +336,7 @@ blocks:
         foreground: p:foreground-success
         foreground_templates:
           - "{{ if gt .Code 0 }}p:foreground-danger{{ end }}"
-        template: "<background,p:separator></> <foreground,background>{{ if eq .Code 0 }}{{ else }} {{ reason .Code }}{{ end }}</> "
+        template: "<background,p:separator></> <foreground,background>{{ if eq .Code 0 }}{{ else }}{{ end }}</> "
         options:
           always_enabled: true
       - type: text

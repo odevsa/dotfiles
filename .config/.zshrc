@@ -25,7 +25,7 @@ zsh-users/zsh-completions kind:fpath path:src
 zsh-users/zsh-history-substring-search
 "
 
-fpath=(/opt/antidote/functions $fpath)
+fpath=(/usr/share/antidote/functions $fpath)
 autoload -Uz antidote
 
 if [[ ! ${ZSH_PLUGINS_CACHE} -nt ${ZSH_PLUGINS} ]]; then

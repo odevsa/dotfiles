@@ -46,4 +46,4 @@ alias install="sudo pacman -S"
 alias remove="sudo pacman -R"
 
 # Oh-My-Posh
-eval "$(oh-my-posh init zsh --config ${HOME}/.config/oh-my-posh/config.omp.json)"
+eval "$(oh-my-posh init zsh --config ${HOME}/.config/oh-my-posh/config.omp.yaml)"

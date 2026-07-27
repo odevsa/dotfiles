@@ -1,16 +1,16 @@
 $schema: https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json
 palette:
   background-base: "#333333"
-  background-primary: "#1c4f41"
+  background-primary: "#1793d1"
   background-danger: "#DE2121"
   background-success: "#1c9f41"
-  background-git: "#92cf9c"
+  background-git: "#224466"
 
   foreground-base: "#CCCCCC"
-  foreground-primary: "#92cf9c"
+  foreground-primary: "#FFFFFF"
   foreground-danger: "#FFFFFF"
   foreground-success: "#FFFFFF"
-  foreground-git: "#1c4f41"
+  foreground-git: "#77d3ff"
 
   path-separator: "#555555"
   separator: "#222222"

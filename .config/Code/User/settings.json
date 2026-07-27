@@ -5,6 +5,7 @@
   "workbench.colorTheme": "Dark Modern",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.colorCustomizations": {},
+  "terminal.integrated.minimumContrastRatio": 1,
   "material-icon-theme.activeIconPack": "nest",
   "code-runner.clearPreviousOutput": true,
   "debug.toolBarLocation": "commandCenter",

@@ -6,6 +6,8 @@
   "workbench.iconTheme": "material-icon-theme",
   "workbench.colorCustomizations": {},
   "terminal.integrated.minimumContrastRatio": 1,
+  "terminal.integrated.gpuAcceleration": "off",
+  "terminal.integrated.fontFamily": "'FiraCode Nerd Font', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
   "material-icon-theme.activeIconPack": "nest",
   "code-runner.clearPreviousOutput": true,
   "debug.toolBarLocation": "commandCenter",

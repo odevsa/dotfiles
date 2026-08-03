@@ -9,14 +9,14 @@
       "left": 2,
     },
     "color": {
-      "1": "#92CF9C",
-      "2": "#629F6C",
+      "1": "#1793D1",
+      "2": "#1793D1",
     },
   },
   "display": {
     "separator": "  ",
     "color": {
-      "keys": "#92CF9C",
+      "keys": "#1793D1",
     },
     "bar": {
       "width": 15,
@@ -28,7 +28,7 @@
     "percent": {
       "type": 3,
       "color": {
-        "green": "green",
+        "green": "#1793D1",
         "yellow": "light_yellow",
         "red": "light_red",
       },

@@ -1,3 +1,7 @@
+zstyle ':omz:update' mode auto
+zstyle ':omz:update' verbose silent
+DISABLE_MAGIC_FUNCTIONS=true
+
 # Plugin Manager
 ZSH_PLUGINS_CACHE=${ZDOTDIR:-$HOME}/.zsh_plugins.zsh
 ZSH_PLUGINS="
@@ -26,11 +30,18 @@ zsh-users/zsh-history-substring-search
 fpath=(/usr/share/antidote/functions $fpath)
 autoload -Uz antidote
 
-if [[ ! ${ZSH_PLUGINS_CACHE} -nt ${ZSH_PLUGINS} ]]; then
+if [[ ! -f ${ZSH_PLUGINS_CACHE} ]] || [[ "$(echo "$ZSH_PLUGINS" | md5sum)" != "$(echo "$(cat "${ZSH_PLUGINS_CACHE}.hash" 2>/dev/null)")" ]]; then
   echo "$ZSH_PLUGINS" | antidote bundle >| "${ZSH_PLUGINS_CACHE}"
+  echo "$ZSH_PLUGINS" | md5sum >| "${ZSH_PLUGINS_CACHE}.hash"
 fi
 
 source ${ZSH_PLUGINS_CACHE}
+
+export ZFUNCTIONS_DIR="${XDG_CONFIG_HOME:-$HOME/.config}/zsh/functions"
+
+# Plugins Settings
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
 
 # Aliases
 alias sudo="sudo "
@@ -45,3 +56,5 @@ alias remove="sudo pacman -R"
 
 # Oh-My-Posh
 eval "$(oh-my-posh init zsh --config ${HOME}/.config/oh-my-posh/config.omp.yaml)"
+
+eval "$(fnm env --use-on-cd --log-level=quiet --shell zsh)"
